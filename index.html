@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kalkulator Matrix</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="matrix-calculator">
+        <h1>Kalkulator Matrix</h1>
+        <div class="matrix-inputs">
+            <div class="matrix" id="matrixA">
+                <h2>Matrix A</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><input type="number" id="a00" value="0" /></td>
+                            <td><input type="number" id="a01" value="0" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" id="a10" value="0" /></td>
+                            <td><input type="number" id="a11" value="0" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="matrix" id="matrixB">
+                <h2>Matrix B</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><input type="number" id="b00" value="0" /></td>
+                            <td><input type="number" id="b01" value="0" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" id="b10" value="0" /></td>
+                            <td><input type="number" id="b11" value="0" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="operations">
+            <button onclick="addMatrices()">Tambah (A + B)</button>
+            <button onclick="multiplyMatrices()">Kali (A × B)</button>
+            <button onclick="clearMatrices()">Bersihkan</button>
+        </div>
+        <div class="result">
+            <h2>Hasil</h2>
+            <table id="resultMatrix">
+                <tbody>
+                    <tr>
+                        <td id="r00">0</td>
+                        <td id="r01">0</td>
+                    </tr>
+                    <tr>
+                        <td id="r10">0</td>
+                        <td id="r11">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

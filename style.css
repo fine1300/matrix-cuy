@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.matrix-calculator {
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  color: #fff;
+}
+
+.matrix-calculator h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.matrix-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.matrix {
+  background: #2d2d2d;
+  padding: 15px;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.matrix h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.matrix table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.matrix td {
+  padding: 5px;
+}
+
+.matrix input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1.2rem;
+  background: #444;
+  color: #fff;
+  text-align: center;
+}
+
+.operations {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.operations button {
+  background: #ff9500;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.operations button:hover {
+  background: #ffb143;
+}
+
+.result {
+  background: #2d2d2d;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.result h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.result table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.result td {
+  padding: 15px;
+  font-size: 1.5rem;
+  border: 1px solid #444;
+  color: #fff;
+  min-width: 50px;
+}
